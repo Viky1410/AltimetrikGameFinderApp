@@ -1,0 +1,212 @@
+html{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  background-color: #141414;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.big-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.form-box{
+  background-color: #303030;
+  padding: 34px 150px 55px 150px;
+  float: left;
+  width: 630px;
+  height: 660px;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.carousel-box{
+  float: left;
+  margin: 0;
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+#carouselExampleControls{
+  width: 453px !important;
+  height: 660px;
+}
+
+.title{
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 45px;
+  margin: auto;
+  
+}
+
+.bold-title{
+  font-weight: 800;
+}
+
+.form-input{
+  border: 1px solid #8F8F8F;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #303030;
+  font-family: "Open Sans";
+  color: #8F8F8F;
+  height: 52px;
+}
+
+.input-text{
+ width: 278px;
+}
+
+.input-icon{
+  height: 20px;
+  width: 20px; 
+}
+
+.remember-checkbox{
+  font-family: "Open Sans";
+  color: #8F8F8F;
+  vertical-align: middle;
+  margin-bottom:25px;
+}
+
+.login-button{
+  float: right;
+  background: rgb(43,179,79);
+  background: linear-gradient(0deg, rgba(43,179,79,1) 0%, rgba(124,210,53,1) 100%);
+  border-radius: 8px;
+  color: #FFFFFF;
+  
+}
+
+.btn-link{
+  color: #FFFFFF;
+  padding:0px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.go-right{
+  float: right;
+}
+
+#separator{
+  height:20px;
+  margin-top:50px;
+  margin-bottom:30px;
+}
+
+.w-17{
+  width:17%;
+}
+
+.w-40{
+  width:40%;
+}
+
+.separator-element{
+  display: inline-block;
+  height:100%;color:#FFFFFF;
+  position: relative;
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+.separator-border{
+  height:2px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 75%;
+  width: 100%;
+}
+
+.btnSocialMedia{
+
+  height:45px;
+  width:80%;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom:25px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.btnSocialMedia-icon{
+  width:45px;
+  display: flex;
+  padding: 10px;
+}
+
+.btnSocialMedia-text{
+  height: 100%;
+  flex-grow: 1;
+  color:#FFFFFF;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#btn-facebook .btnSocialMedia-icon{
+  background-color: #263C68;
+}
+
+#btn-twitter .btnSocialMedia-icon{
+  background-color: #0695CB;
+}
+
+#btn-google .btnSocialMedia-icon{
+  background-color: #9D9D9D;
+}
+
+#btn-facebook .btnSocialMedia-text{
+  background-color: #3B5998;
+}
+
+#btn-twitter .btnSocialMedia-text{
+  background-color: #00ACED;
+}
+
+#btn-google .btnSocialMedia-text{
+  background-color: #C7C7C7;
+}
+
+#carouselExampleControls{
+  width: 297px;
+  display: inline-block;
+}
+
+
+@media (max-width: 767px) {
+  .btnSocialMedia {
+   width:100%;
+  }
+  
+}
+
+@media (min-width: 768px) {
+ 
+}
+
+
