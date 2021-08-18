@@ -12,11 +12,14 @@
   <body>
      <div class="big-box">
        <div class="form-box">
-         <div class="title">GAME<span class="bold-title">FINDER</span></div>
+        <div class="title">GAME<span class="bold-title">FINDER</span></div>
+        <div class="alert alert-success" role="alert" id="success-message">
+          logged in!
+        </div>
         <form name="login">
           <div class="input-group mb-3">
             <span class="input-group-text form-input" id="basic-addon1"><img src="img/icons/avatar.svg" class="input-icon"/></span>
-            <input type="text" class="form-control form-input input-text" name="user" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+            <input type="text" class="form-control form-input input-text" name="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
           </div>
           <div class="input-group mb-3 clearfix">
             <span class="input-group-text form-input" id="basic-addon1"><img src="img/icons/key.svg" class="input-icon"/></span>
@@ -28,7 +31,7 @@
           <label class="form-check-label" for="flexCheckDefault">
             Remember me
           </label>
-          <button type="button" class="btn login-button" onclick="validation()">LOGIN</button>
+          <button type="button" class="btn login-button" onclick="validateAndLogin()">LOGIN</button>
         </div>
         <div>
           

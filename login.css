@@ -198,6 +198,10 @@ body{
 }
 
 
+#success-message{
+  display: none;
+}
+
 @media (max-width: 767px) {
   .btnSocialMedia {
    width:100%;
