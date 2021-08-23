@@ -14,8 +14,8 @@ function validation(email, password) {
     const isValidPassword = password != null && password !== "";
 
     if(!isValidEmail || !isValidPassword) {
-        //mostrar error
-        alert("incorrecto")
+        //show error
+        alert("Invalid email or password")
         return false;
     }
     return true;
@@ -38,11 +38,12 @@ function login(email, password) {
     }).then(res => res.json())
     .catch(error => { 
         console.error('Error:', error)
-        //snackbar de error
+        //TODO snackbar error
     })
     .then(response => {
-        window.localStorage.setItem('accessToken', response.accessToken);
+        window.localStorage.setItem('userData', response);
+        //snackbar success
         document.getElementById('success-message').style.display = "block";
-        //snackbar de success
+        setTimeout(function(){location.href='main.html';}, 3000);
     });
 }
