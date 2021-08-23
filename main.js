@@ -28,7 +28,7 @@ function bringGames(page){
             
             let card = ' <div class="col"> ' +
             ' <div class="card h-100"> ' +
-              ' <img src="'+ img +'" class="card-img-top img-card"> ' +
+              ' <img src="'+ img +'" class="card-img-top img-card" data-toggle="modal" data-target="#card-name"> ' +
             ' <div class="card-body"> ' +
                 '  <h5 class="card-title">'+ gameTitle +' <span class="ranking"> '+ "#" + ranking +' </span> </h5> ' + 
                 ' <p class="card-text">'+ "Released date " + releasedDate +'</p> ' +
