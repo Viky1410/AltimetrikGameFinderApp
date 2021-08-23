@@ -5,7 +5,7 @@ body{
 .header{
     background: linear-gradient(0deg, rgba(43,179,79,1) 0%, rgba(124,210,53,1) 100%);
     height: 120px;
-    display: inline-flex;
+    display: grid;
 }
 
 .title{
@@ -15,31 +15,32 @@ font-weight: 400;
 font-size: 28px;
 margin: 0;
 display: inline;
-padding-top: 34px;
-padding-left: 39px;
+float: left;
+width: fit-content;
 }
 .bold-title{
 font-weight: 800;
 }
-
-.search-bar{
-    height: 40px;
-    width: 362px;
-    display: inline;
-    padding-top: 32px;
-}
-
-.navbar{
+.navbar-brand{
     background: #F1F1F1;
     border-radius: 20px;
     height: 40px;
     align-content: center;
     justify-content: center;
 }
-
-.user{
-    padding-top: 29.33px;
-    padding-right: 37.81px;
+.search-bar{
+    height: 40px;
+    width: 362px;
+    display: inline;
+    padding-top: 32px;
+    align-items: center;
+    
+}
+.left-group{
+    float: right;
+}
+.user-img{
+    width: fit-content;
 }
 
 .navbar-brand{
@@ -51,7 +52,7 @@ color: #A6A6A6;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     color: #FFFFFF;
-    margin-top: 44px;
+    width: fit-content;
 }
 .cont-line{
     height: 2px;
@@ -79,7 +80,7 @@ color: #A6A6A6;
 .pos-bog-titles{
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 50;
 }
 .big-titles{
     width: fit-content;
@@ -108,7 +109,24 @@ color: #A6A6A6;
     font-weight: 800;
     color: #FFFFFF;
 }
+.img-card{
+    height: 60%;
+}
+.ranking{
+    color:#2BB34F
+}
+.separator-element{
+    height:2px;
+  background-color: #3D3D3D;
+  position: relative;
+  width: 70%;
+  bottom: 10%;
+}
 .card-text{
     font-weight: 300;
     color: #939393;
+}
+.loading{
+    text-align: center;
+    justify-self: center;
 }

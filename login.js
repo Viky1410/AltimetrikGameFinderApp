@@ -38,11 +38,12 @@ function login(email, password) {
     }).then(res => res.json())
     .catch(error => { 
         console.error('Error:', error)
-        //snackbar error
+        //TODO snackbar error
     })
     .then(response => {
-        window.localStorage.setItem('accessToken', response.accessToken);
-        document.getElementById('success-message').style.display = "block";
+        window.localStorage.setItem('userData', response);
         //snackbar success
+        document.getElementById('success-message').style.display = "block";
+        setTimeout(function(){location.href='main.html';}, 3000);
     });
 }
